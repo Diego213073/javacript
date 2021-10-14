@@ -35,3 +35,7 @@ console.log(individuo.split('a'));
 //Convertir cadena a mayúsula y minúscula
 console.log(individuo.toLowerCase());
 console.log(individuo.toUpperCase());
+
+const numero = "30";
+
+console.log(parseInt(numero));
