@@ -12,7 +12,14 @@ const persona = {
 contenido.firstElementChild.textContent = persona.nombre;
 const nuevoElemento = document.createElement('p');
 nuevoElemento.textContent = persona['apellido'];
-
-console.log(persona);
-console.log(contenido)
 contenido.append(nuevoElemento);
+
+
+//Agregar nuevas propiedades
+persona.fechaActual = Date();
+console.log(persona);
+
+
+//Eliminar una propiedad
+delete persona.nombre;
+console.log(persona);
