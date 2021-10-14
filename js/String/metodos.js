@@ -20,3 +20,4 @@ console.log(frase.replace('Sólo', 'texto nuevo'));
 //cortar texto de una cadena
 console.log(frase.slice(0, 8));
 console.log(frase.substring(0, 8));
+console.log(nombre.trim().charAt(0));
