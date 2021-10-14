@@ -3,13 +3,18 @@ const producto = {
     espicificaciones: {
         bateria: '5000 mAh',
         pantall: '1980 x 1080',
-        almacenamiento: '128 GB'
+        almacenamiento: '128 GB',
+        otrasEspecificaciones: {
+            procesador: 'snadragon 720g'
+        }
     }
 };
 
 
-const { nombre } = producto;
+const { nombre, espicificaciones } = producto;
 const { espicificaciones: { bateria } } = producto;
-console.log(nombre);
+const { espicificaciones: { otrasEspecificaciones: { procesador } } } = producto;
 
+console.log(nombre, espicificaciones);
 console.log(bateria);
+console.log(procesador);
