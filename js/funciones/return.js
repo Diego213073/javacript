@@ -1,7 +1,7 @@
 const funcionJs = (n1, n2) => {
 
     return (parametro1, parametro2) => {
-        return (elevado) => `<h1>Hola mundo : ${Math.pow(((n1 + n2) * (parametro1 + parametro2)), elevado)}</h1>`;
+        return (elevado) => `Resultado : ${Math.pow(((n1 + n2) * (parametro1 + parametro2)), elevado)}`;
     };
 };
 
@@ -11,7 +11,12 @@ function mostarInfomarcion() {
     contenido.addEventListener('click', mostrarResultado);
 }
 
-const mostrarResultado = (event) => event.target.firstElementChild.textContent = funcionJs(2, 2)(2, 3)(2);
-
+const mostrarResultado = (event) => {
+    const text = document.createElement('li');
+    text.style.color = "red";
+    text.style.textAlign = "center";
+    text.textContent = funcionJs(2, 2)(2, 3)(2);
+    event.target.firstElementChild.append(text);
+};
 
 mostarInfomarcion();
