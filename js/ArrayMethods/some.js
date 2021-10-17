@@ -9,6 +9,8 @@ const meses = ["enero", "febrero", "abril", "marzo"];
 
 const mes = meses.some(m => m.includes('enero'));
 const persona = arr.some(per => per.nombre === 'Diego');
+const include = meses.includes('enero');
 
+console.log(include); //No sirve cuando un arreglo tiene objetos
 console.log(persona);
 console.log(mes);
