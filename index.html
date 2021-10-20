@@ -5,21 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
         }
         
-        div {
-            border: 1px solid gray;
-            inline-size: 300px;
-            block-size: 300px;
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 1.6rem;
+        }
+        
+        .contenido {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            width: 100%;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid gray;
+            box-shadow: 2px 3px 1px 3px rgb(226, 221, 221);
+        }
+        
+        .contenido a {
+            font-weight: 900;
+            padding: 1rem;
+            border-radius: .5rem;
+            text-decoration: none;
+            margin-right: 2rem;
+            background-image: linear-gradient(to right, rgb(245, 62, 62) 40%, rgb(179, 46, 46) 100%);
+            color: white;
+            transition: color .5s ease-out;
+        }
+        
+        .contenido a:hover {
+            color: white;
+        }
+        
+        .contenido-secundario {
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 1px 2px 5px 7px rgb(211, 204, 204);
+            text-align: justify;
+            max-inline-size: 60rem;
+            margin: 0 auto 2rem;
+        }
+        
+        img {
+            margin: 1rem;
+            float: left;
         }
     </style>
 </head>
@@ -27,32 +70,31 @@
 <body>
 
     <div class="contenido" id="cont">
-        <ul>
-            <li>Diego</li>
-            <li>Laura</li>
-            <li>Martinez</li>
-        </ul>
-
-        <ul>
-            <li>Romero</li>
-            <li>Laura</li>
-            <li>Martinez</li>
-        </ul>
-
-
-        <h1>HOLA MUNDO</h1>
+        <div><img src="img/angular.png" alt="vue" width="60"></div>
         <div>
-            <p>Hola</p>
+            <a href="">Diego</a>
+            <a href="">Alejandro</a>
+            <a href="">Ramirez</a>
         </div>
     </div>
 
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio nobis earum et accusantium cum consequatur, maxime eum placeat ullam illum quas possimus fugit laborum optio facilis dolor reprehenderit omnis.</p>
+    <div class="contenido-secundario">
+        <img src="img/angular.png" alt="angular">
+        <h1 style="text-align: center;">¿Qué es Angular?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis corrupti mollitia soluta temporibus assumenda molestiae numquam placeat, quos a, magnam nihil at? Perspiciatis, voluptatum eos quibusdam recusandae atque incidunt magni quam
+            aut accusamus saepe error odio quos est optio mollitia nemo facilis corporis alias cumque dolorem tempora, expedita delectus? Architecto iste officiis suscipit maxime est quidem vitae eos ducimus? Omnis, autem recusandae. Aut, perspiciatis.
+            Dolores ad quaerat velit tenetur? Reprehenderit magnam, voluptatem ipsa delectus repudiandae cupiditate tempora assumenda beatae porro vero alias culpa illum quis suscipit quisquam sit ut eum, saepe expedita corrupti labore. Enim, aliquam
+            assumenda quae impedit odio voluptate sed numquam repellat eligendi. Nobis vitae hic neque blanditiis. Accusamus optio laudantium harum, sapiente perspiciatis beatae nesciunt distinctio assumenda eligendi error quisquam! Voluptatum cum possimus
+            minima porro quisquam animi minus dolore accusamus. Expedita voluptatibus corporis libero delectus sit tempora voluptas odit ad dolorum vero! Ad ex harum, animi magni unde, illo quisquam, expedita dolore deleniti impedit laudantium? Odit ex
+            blanditiis inventore animi voluptas debitis vel suscipit deleniti officia minus possimus, reiciendis pariatur odio. Ipsa reprehenderit sit optio vero, cumque enim est hic, odio quas illo unde id eaque dolore accusamus itaque. Fugit, quas?
+            Reiciendis unde beatae praesentium modi nobis laudantium maxime aliquid incidunt. Quas recusandae consequatur alias non saepe soluta dolor, aspernatur aperiam, vitae voluptate temporibus placeat ullam eligendi aut iste nesciunt dicta maxime.
+            Hic corrupti adipisci, nulla eligendi illum ea dolorum tempore earum fugit ipsam laudantium! Ad dolore veniam reprehenderit aut quisquam ea obcaecati vitae doloremque fugiat. Sed temporibus quos doloremque sequi quisquam id laboriosam provident
+            iusto repellendus illum iure sint non itaque quo dolorum quam porro, a odit. Odio alias, doloribus praesentium rem modi pariatur perferendis. Ex dolores perferendis tempore incidunt sapiente eaque officiis illum facere in nihil, optio iure
+            dolorum. Iure porro debitis pariatur quo!</p>
     </div>
 
-    <img src="img/angular.png" alt="">
+    <script src="js/DOM/generarHTML.js"></script>
 
-    <script src="js/DOM/navegandoDOM.js"></script>
 </body>
 
 </html>
