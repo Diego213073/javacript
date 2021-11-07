@@ -1,11 +1,9 @@
-let arr = [];
+const input = document.querySelector('input[type=submit]');
 
-for (let i = 0; i < 100; i++) {
-    arr.push(i);
-}
+let valorAleatorio = () => Math.round(Math.random() * 1000);
 
-
-const total = arr.filter(elemento => elemento % 3 == 0 || elemento % 5 == 0).reduce((x, y) => x + y);
-
-
-console.log(`La sumatoria es: ${total}`);
+input.addEventListener('click', (e) => {
+    e.preventDefault();
+    const contenido = document.querySelector('.resultado h1:nth-child(2)');
+    contenido.innerHTML = `<h1>${valorAleatorio()}</h1>`;
+});

@@ -20,3 +20,9 @@ const mostrarResultado = (event) => {
 };
 
 mostarInfomarcion();
+
+
+//Retornar un objeto con una función de flecha
+const getObj = (nombre, apellido) => ({ nombre, apellido });
+
+console.log(getObj('Diego', 'Alejandro'));
